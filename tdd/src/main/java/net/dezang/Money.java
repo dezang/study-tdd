@@ -1,6 +1,6 @@
 package net.dezang;
 
-public abstract class Money {
+public class Money {
     protected int amount;
     protected String currency;
 
@@ -17,16 +17,35 @@ public abstract class Money {
         return new Franc(amount, "CHF");
     }
 
+// Auto Generate
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        Dollar dollar = (Dollar) o;
+//        return amount == dollar.amount;
+//    }
+
     @Override
     public boolean equals(Object o) {
         Money money = (Money) o;
         return amount == money.amount
-            && getClass().equals(money.getClass());
+            && currency().equals(money.currency());
     }
-
-    abstract Money times(int multiplier);
 
     String currency() {
         return currency;
+    }
+
+    @Override
+    public String toString() {
+        return "Money{" +
+            "amount=" + amount +
+            ", currency='" + currency + '\'' +
+            '}';
+    }
+
+    Money times(int multiplier) {
+        return new Money(amount * multiplier, currency);
     }
 }

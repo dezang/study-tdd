@@ -16,7 +16,7 @@
 - ~~5CHF x 2 = 10 CHF~~
 - Dollar/Franc 중복
 - ~~공용 equals~~
-- 공용 times
+- ~~공용 times~~
 - ~~Franc 과 Dollar 비교하기~~
 - ~~통화?~~
 - testFrancMultiplication 을 지워야 할까?

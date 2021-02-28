@@ -8,20 +8,6 @@ class Dollar extends Money {
     }
 
     @Override
-    Money times(int multiplier) {
-        return Money.dollar(amount * multiplier);
-    }
-
-    // Auto Generate
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//        Dollar dollar = (Dollar) o;
-//        return amount == dollar.amount;
-//    }
-
-    @Override
     public int hashCode() {
         return Objects.hash(amount);
     }
