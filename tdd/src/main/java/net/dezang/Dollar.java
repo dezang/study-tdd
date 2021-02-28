@@ -2,8 +2,7 @@ package net.dezang;
 
 import java.util.Objects;
 
-class Dollar {
-    private int amount;
+class Dollar extends Money {
 
     public Dollar(int amount) {
         this.amount = amount;
@@ -21,12 +20,6 @@ class Dollar {
 //        Dollar dollar = (Dollar) o;
 //        return amount == dollar.amount;
 //    }
-
-    @Override
-    public boolean equals(Object o) {
-        Dollar dollar = (Dollar) o;
-        return amount == dollar.amount;
-    }
 
     @Override
     public int hashCode() {
