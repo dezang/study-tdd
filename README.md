@@ -14,12 +14,12 @@
 - Equal null
 - Equal Object
 - ~~5CHF x 2 = 10 CHF~~
-- Dollar/Franc 중복
+- ~~Dollar/Franc 중복~~
 - ~~공용 equals~~
 - ~~공용 times~~
 - ~~Franc 과 Dollar 비교하기~~
 - ~~통화?~~
-- testFrancMultiplication 을 지워야 할까?
+- ~~testFrancMultiplication 제거~~
 
 ## 잊지 말 것.
 1. 작은 테스트를 하나 추가한다.
