@@ -10,8 +10,8 @@
 - ~~Bank.reduce(Money)~~
 - ~~Money 에 대한 통화 변환을 수행하는 Reduce~~
 - ~~Reduce(Bank, String)~~
-- Sum.plus
-- Expression.times
+- ~~Sum.plus~~
+- ~~Expression.times~~
 
 ## 잊지 말 것.
 1. 작은 테스트를 하나 추가한다.
